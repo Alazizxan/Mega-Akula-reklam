@@ -2,12 +2,18 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
+import path from "path";
+import { fileURLToPath } from "url";
 
 dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+// __dirname olish (ESM muhitda)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // MongoDB ulanish
 mongoose
@@ -37,6 +43,13 @@ app.post("/api/save", async (req, res) => {
   } catch (err) {
     res.status(500).json({ error: "Server xatosi" });
   }
+});
+
+// 👉 Frontendni serve qilish
+app.use(express.static(path.join(__dirname, "../frontend/dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "../frontend/dist", "index.html"));
 });
 
 const PORT = process.env.PORT || 5000;
