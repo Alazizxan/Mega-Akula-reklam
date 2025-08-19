@@ -6,6 +6,7 @@ import Lottery from './components/Lottery';
 import Reviews from './components/Reviews';
 import Order from './components/Order';
 import Footer from './components/Footer';
+import MedHero from './components/malummot';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -32,6 +33,7 @@ function App() {
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Hero darkMode={darkMode} />
       <Story darkMode={darkMode} />
+      <MedHero darkMode={darkMode} />
       <Lottery darkMode={darkMode} />
       <Reviews darkMode={darkMode} />
       <Order darkMode={darkMode} />

@@ -32,14 +32,18 @@ export default function Lottery({ darkMode }: LotteryProps) {
     }, 1000);
   };
 
+  const handleShowModal = () => {
+    setShowModal(true);
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.phone) return;
 
     setIsSubmitting(true);
     
-    // Simulate API call to MongoDB
     try {
+      // API simulyatsiya
       await new Promise(resolve => setTimeout(resolve, 1500));
       setShowModal(false);
       setShowSuccess(true);
@@ -96,12 +100,15 @@ export default function Lottery({ darkMode }: LotteryProps) {
             ))}
           </div>
 
+          {/* Tabrik blok faqat modal yopilgandan keyin chiqadi */}
           {selectedBox && !showModal && (
             <div className="text-center mt-12">
-              <div className={`inline-block px-6 md:px-8 py-4 rounded-2xl ${darkMode ? 'bg-slate-800 text-white' : 'bg-white text-slate-900'} shadow-xl border ${darkMode ? 'border-slate-700' : 'border-slate-200'}`}>
-                <h3 className="text-2xl font-bold mb-2">🎉 Tabriklaymiz!</h3>
-                <p className="text-lg">Siz 100% chegirma yutdingiz!</p>
-              </div>
+              <button
+                onClick={handleShowModal}
+                className="px-8 py-3 rounded-xl bg-gradient-to-r from-blue-700 to-indigo-700 text-white font-semibold shadow-lg hover:scale-105 transform transition-all duration-300"
+              >
+                🎉 100% Chegirmani Olish!
+              </button>
             </div>
           )}
         </div>
@@ -137,13 +144,11 @@ export default function Lottery({ darkMode }: LotteryProps) {
                   className="w-20 h-25 object-cover rounded-lg mx-auto mb-2"
                 />
                 <div className="absolute -top-1 -right-16 bg-red-600 text-white text-xs px-2 py-1 rounded-full font-bold shadow-lg">
-                  Krem
-                  
-                  0 so'm!
+                  Krem 0 so'm!
                 </div>
               </div>
               <p className={`${darkMode ? 'text-slate-300' : 'text-slate-600'} text-xs mt-2`}>
-                To'liq komplekt  yarim narxda!
+                To'liq komplekt yarim narxda!
               </p>
             </div>
 
