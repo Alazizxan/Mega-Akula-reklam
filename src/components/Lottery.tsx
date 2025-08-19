@@ -37,28 +37,40 @@ export default function Lottery({ darkMode }: LotteryProps) {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.name || !formData.phone) return;
+  e.preventDefault();
+  if (!formData.name || !formData.phone) return;
 
-    setIsSubmitting(true);
-    
-    try {
-      // API simulyatsiya
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      setShowModal(false);
-      setShowSuccess(true);
-      
-      setTimeout(() => {
-        setShowSuccess(false);
-        setSelectedBox(null);
-        setFormData({ name: '', phone: '' });
-      }, 4000);
-    } catch (error) {
-      console.error('Error submitting form:', error);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  setIsSubmitting(true);
+
+  try {
+    const res = await fetch("http://localhost:5000/api/save", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    if (!res.ok) throw new Error("Server xatosi");
+
+    const data = await res.json();
+    console.log("✅ Javob:", data);
+
+    setShowModal(false);
+    setShowSuccess(true);
+
+    setTimeout(() => {
+      setShowSuccess(false);
+      setSelectedBox(null);
+      setFormData({ name: "", phone: "" });
+    }, 4000);
+  } catch (error) {
+    console.error("❌ Yuborishda xato:", error);
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
+
+
 
   return (
     <>
