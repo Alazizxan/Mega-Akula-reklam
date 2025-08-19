@@ -42,6 +42,24 @@ export default function Reviews({ darkMode }: ReviewsProps) {
       date: "2024-01-05",
       text: "20 yil davomida bo'g'imlar og'rig'i bilan kurash olib bordim. Akula menga ikkinchi hayot berdi. Hozir bog'imda ishlashga ham quvvatim bor!",
       avatar: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Uzbekistani_old_man_in_2005.jpg/250px-Uzbekistani_old_man_in_2005.jpg"
+    },
+    {
+      name: "Laylo Olimova",
+      age: 45,
+      location: "Sirdaryo",
+      rating: 5,
+      date: "2024-01-05",
+      text: "Мен бу восита билан артритга қарши курашдим. Артрит узоқ вақт давомида менинг ҳаётимнинг йўлдоши бўлган. Кейин остеохондроз ва суяк муаммолари пайдо бўлди. Ҳаракат ва оғриқ жуда ёмонлашди. Умрим давомида қўлимдан келган ҳамма нарса билан даволандим. Ҳеч нарса ҳақиқатан ҳам ёрдам бермади. Мен Flexoderil ни синаб кўришга қарор қилдим. Мен биринчи марта интернет орқали буюртма беряпман, аммо ҳаммаси осон бўлиб чиқди.",
+      avatar: "https://gudrunklaff.com/wp-content/uploads/2013/11/uzbek-woman.jpg"
+    },
+    {
+      name: "Mahmudxon Hamdamov",
+      age: 65,
+      location: "Samarqand",
+      rating: 5,
+      date: "2025-03-02",
+      text: "Мен Flexoderil маҳсулоти ҳақида кўпроқ маълумотни сайтда ўқидим. Таъсирли!уни бир ойдан бери (ора-орада) ичяпман. Ўзимни анча яхши ҳис қила бошладим. Куч ва энергия пайдо бўлди, иммунитет яхшиланди. Ўзимни 10 ёшга ёшроқ ҳис қиламан",
+      avatar: "https://ozoutback.com.au/Uzbekistan/portrait/slides/20130623039.jpg"
     }
   ];
 

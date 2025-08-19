@@ -15,7 +15,7 @@ export default function Story({ darkMode }: StoryProps) {
     },
     {
       icon: <Heart className="w-8 h-8" />,
-      image: "photo_2025-08-18_19-15-26.jpg",
+      image: "akula.png",
       title: "Uzoq umr ko'rish sirlari",
       description: "Ko'p yillik tadqiqotlar shuni ko'rsatdiki, bo'g'imlarning sog'ligi insonning umumiy hayot sifatiga bevosita ta'sir ko'rsatadi. Akula tabiiy ingredientlar asosida yaratilgan va uzoq muddat foydalanish uchun xavfsizdir."
     },
@@ -45,35 +45,51 @@ export default function Story({ darkMode }: StoryProps) {
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-              {stories.map((story, index) => (
-                <div key={index} className={`${darkMode ? 'bg-slate-700' : 'bg-slate-50'} rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border ${darkMode ? 'border-slate-600' : 'border-slate-200'}`}>
-                  {/* Image */}
-                  <div className="relative h-48 md:h-56 overflow-hidden">
-                    <img
-                      src={story.image}
-                      alt={story.title}
-                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                    />
-                    <div className="absolute top-3 left-3 bg-blue-700 text-white p-2 rounded-full shadow-lg">
-                      {React.cloneElement(story.icon, { className: "w-5 h-5" })}
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <div className="p-4 md:p-6">
-                    <h3 className={`text-lg font-bold mb-3 ${darkMode ? 'text-white' : 'text-slate-900'}`}>
-                      {story.title}
-                    </h3>
-                    <p className={`${darkMode ? 'text-slate-300' : 'text-slate-600'} leading-relaxed text-sm`}>
-                      {story.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
+        <div className="max-w-6xl mx-auto px-4">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+    {stories.map((story, index) => (
+      <div
+        key={index}
+        className={`${
+          darkMode ? "bg-slate-700" : "bg-slate-50"
+        } rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border ${
+          darkMode ? "border-slate-600" : "border-slate-200"
+        }`}
+      >
+        {/* Image */}
+        <div className="relative w-full aspect-[4/3] overflow-hidden">
+          <img
+            src={story.image}
+            alt={story.title}
+            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          />
+          <div className="absolute top-3 left-3 bg-blue-700 text-white p-2 rounded-full shadow-lg">
+            {React.cloneElement(story.icon, { className: "w-5 h-5" })}
           </div>
         </div>
+
+        {/* Content */}
+        <div className="p-4 md:p-6">
+          <h3
+            className={`text-lg font-bold mb-3 ${
+              darkMode ? "text-white" : "text-slate-900"
+            }`}
+          >
+            {story.title}
+          </h3>
+          <p
+            className={`${
+              darkMode ? "text-slate-300" : "text-slate-600"
+            } leading-relaxed text-sm`}
+          >
+            {story.description}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
       </div>
     </section>
   );
