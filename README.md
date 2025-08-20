@@ -88,7 +88,17 @@ For inquiries or collaboration, please reach out directly.
 
 ---
 
+
+
 ## 📜 License
 
-This project is proprietary and built exclusively for **Mega Akula**.  
-All rights reserved.  
+Copyright (c) 2025 Alazizxan. All Rights Reserved.
+
+This project is proprietary software developed exclusively for **Mega Akula**.  
+
+- You are **not allowed** to copy, modify, distribute, or use any part of this codebase without explicit permission.  
+- The source code is available **for transparency and showcase purposes only**.  
+- All rights remain with the author.  
+
+For business inquiries or collaboration, please contact the repository owner.
+
