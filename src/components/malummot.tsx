@@ -19,13 +19,13 @@ export default function MedHero({ darkMode }: MedHeroProps) {
   const text = {
     headline: (
       <>
-        Bo‘g‘im sog‘lig‘i — {" "}
-        <span className="text-blue-700">mutaxassislar yondashuvi</span>
+        Бўғим согʻлиғи — {" "}
+        <span className="text-blue-700">мутахассислар ёндашуви</span>
       </>
     ),
-    sub: "Mega Akula: bo‘g‘imlar uchun klinik asosli parvarish konsepsiyasi",
+    sub: "Мега Акула: бўғимлар учун клиник асосли парвариш концепцияси",
     lead:
-      "Quyida keltirilgan ma’lumotlar profilaktik parvarish, kundalik gigiyena va hayot tarzi bo‘yicha tavsiyalarni o‘z ichiga oladi. Har qanday qo‘llashdan avval shifokoringiz bilan maslahatlashing.",
+      "Қуйда келтирилган маьлумотлар профилактик парвариш, кундалик гигиена ва ҳаёт тарзи бўйича тавсияларни ўз ичига олади. Ҳар қандай қўллашдан аввал шифокорингиз билан масаҳатлашингиз.",
   };
 
   return (
@@ -54,12 +54,12 @@ export default function MedHero({ darkMode }: MedHeroProps) {
                 darkMode ? "text-blue-200" : "text-blue-700"
               }`}
             >
-              Klinik izoh
+              Клиник изоҳ
             </span>
           </div>
 
           <h1
-            className={`text-4xl md:text-6xl font-bold leading-tight ${
+            className={`text-5xl md:text-7xl font-bold leading-tight ${
               darkMode ? "text-white" : "text-slate-900"
             }`}
           >
@@ -67,7 +67,7 @@ export default function MedHero({ darkMode }: MedHeroProps) {
           </h1>
 
           <p
-            className={`mt-4 text-xl md:text-2xl font-semibold ${
+            className={`mt-6 text-2xl md:text-3xl font-semibold ${
               darkMode ? "text-slate-300" : "text-slate-700"
             }`}
           >
@@ -75,7 +75,7 @@ export default function MedHero({ darkMode }: MedHeroProps) {
           </p>
 
           <p
-            className={`mt-6 text-base md:text-lg leading-relaxed ${
+            className={`mt-8 text-lg md:text-xl leading-relaxed ${
               darkMode ? "text-slate-300" : "text-slate-600"
             }`}
           >
@@ -83,35 +83,35 @@ export default function MedHero({ darkMode }: MedHeroProps) {
           </p>
 
           {/* Quick badges */}
-          <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <span className="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-white/50 backdrop-blur border border-slate-200 shadow-sm dark:bg-slate-800/50 dark:border-slate-700">
-              <ShieldCheck className="w-4 h-4 text-emerald-600" />
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <span className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white/50 backdrop-blur border border-slate-200 shadow-sm dark:bg-slate-800/50 dark:border-slate-700">
+              <ShieldCheck className="w-5 h-5 text-emerald-600" />
               <span
-                className={`text-sm ${
+                className={`text-base ${
                   darkMode ? "text-slate-200" : "text-slate-800"
                 }`}
               >
-                Parvarish va profilaktikaga mos
+                Парвариш ва профилактикага мос
               </span>
             </span>
-            <span className="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-white/50 backdrop-blur border border-slate-200 shadow-sm dark:bg-slate-800/50 dark:border-slate-700">
-              <FlaskConical className="w-4 h-4 text-indigo-600" />
+            <span className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white/50 backdrop-blur border border-slate-200 shadow-sm dark:bg-slate-800/50 dark:border-slate-700">
+              <FlaskConical className="w-5 h-5 text-indigo-600" />
               <span
-                className={`text-sm ${
+                className={`text-base ${
                   darkMode ? "text-slate-200" : "text-slate-800"
                 }`}
               >
-                Tahliliy yondashuv
+                Таҳлилий ёндашув
               </span>
             </span>
-            <span className="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-white/50 backdrop-blur border border-slate-200 shadow-sm dark:bg-slate-800/50 dark:border-slate-700">
-              <Pill className="w-4 h-4 text-blue-600" />
+            <span className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white/50 backdrop-blur border border-slate-200 shadow-sm dark:bg-slate-800/50 dark:border-slate-700">
+              <Pill className="w-5 h-5 text-blue-600" />
               <span
-                className={`text-sm ${
+                className={`text-base ${
                   darkMode ? "text-slate-200" : "text-slate-800"
                 }`}
               >
-                Individual natijalar farq qiladi
+                Индивидуал натижалар фарқ қилади
               </span>
             </span>
           </div>
@@ -119,11 +119,11 @@ export default function MedHero({ darkMode }: MedHeroProps) {
           {/* CTA */}
           <button
             onClick={scrollToLottery}
-            className="group mt-8 bg-gradient-to-r from-blue-700 to-indigo-700 text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold rounded-full shadow-2xl hover:shadow-blue-700/30 transition-all duration-300 transform hover:scale-105 hover:-translate-y-0.5"
+            className="group mt-10 bg-gradient-to-r from-blue-700 to-indigo-700 text-white px-8 md:px-10 py-4 md:py-5 text-lg md:text-xl font-semibold rounded-full shadow-2xl hover:shadow-blue-700/30 transition-all duration-300 transform hover:scale-105 hover:-translate-y-0.5"
           >
             <span className="flex items-center gap-2 justify-center">
-              Chegirmada olish
-              <ArrowDown className="w-5 h-5 group-hover:animate-bounce" />
+              Чегирмада олиш
+              <ArrowDown className="w-6 h-6 group-hover:animate-bounce" />
             </span>
           </button>
         </div>
@@ -131,109 +131,109 @@ export default function MedHero({ darkMode }: MedHeroProps) {
 
       {/* Info Section */}
       <section
-        className={`relative py-16 px-6 md:px-12 ${
+        className={`relative py-20 px-6 md:px-12 ${
           darkMode ? "bg-slate-950 text-slate-200" : "bg-white text-slate-800"
         }`}
       >
-        <div className="max-w-4xl mx-auto prose prose-lg prose-blue dark:prose-invert text-center">
-          <h2 className="text-3xl font-bold mb-6">
-            Bo‘g‘imlarning shikastlanishi qanday patologiyalarga olib keladi?
+        <div className="max-w-5xl mx-auto prose prose-xl prose-blue dark:prose-invert text-center">
+          <h2 className="text-4xl font-bold mb-8">
+            Бўғимларнинг шикастланиши қандай патологияларга олиб келади?
           </h2>
-          <p>
-            Avval aytganimdek, butun tana bundan aziyat chekadi. Ammo, albatta,
-            harakat bilan bevosita bog‘liq bo‘lgan organlar va tizimlar – ya’ni
-            tayanch-harakat tizimining o‘zi birinchi navbatda aziyat chekadi.
+          <p className="text-xl">
+            Аввал айтганимдек, бутун тана бундан азият чекади. Аммо, албатта,
+            ҳаракат билан бевосита богʻлиқ бўлган органлар ва тизимлар – яъни
+            таянч-ҳаракат тизимининг ўзи биринчи навбатда азият чекади.
           </p>
-          <p>
-            Suyaklar va bo‘g‘imlardagi yallig‘lanish. Uzoq vaqt davomida shikastlanishda bo‘g‘imlarda suyuqlik to‘planishi mumkin, bu esa to‘qimalarning butunlay nobud bo‘lishiga olib keladi, o‘z navbatida bu muayyan organlardagi alohida hujayralarning nobud bo‘lishiga olib kelishi mumkin.
+          <p className="text-xl">
+            Суяклар ва бўғимлардаги яллиғʻланиш. Узоқ вақт давомида шикастланишда бўғимларда суюқлик тўпланиши мумкин, бу эса тўқималарнинг бутунлай нобуд бўлишига олиб келади, ўз навбатида бу муайян органлардаги алоҳида ҳужайраларнинг нобуд бўлишига олиб келиши мумкин.
           </p>
-          <p>
-            Va xuddi shu narsa hamma joyda sodir bo‘ladi! Revmatik kasalliklardan o‘lgan odamlar soni boshqa sabablaridan o‘lgan odamlar sonidan 4 baravar ko‘p. Shifokorlar buni bilishadi, bo‘g‘imlarni tiklash kerakligini bilishadi, lekin qandaydir sabab bilan bu amaliyot O‘zbekiston tibbiyotida yo‘q. Ko‘pgina shifokorlar artritda og‘riqni kamaytirish uchun tabletkalar yozib berishadi. Ammo ular davolamaydi, vaqtinchalik effekt beradi. Ammo bo‘g‘imlarni tiklash kerak.
+          <p className="text-xl">
+            Ва худди шу нарса ҳамма жойда содир бўлади! Ревматик касалликлардан ўлган одамлар сони бошқа сабабларидан ўлган одамлар сонидан 4 баравар кўп. Шифокорлар буни билишади, бўғимларни тиклаш кераклигини билишади, лекин қандайдир сабаб бу амалиёт Ўзбекистон тиббиётида йўқ. Кўпгина шифокорлар артритда оғриқни камайтириш учун таблитклар ёзиб беришади. Аммо улар даволамайди, вақтинчалик эффект беради. Аммо бўғимларни тиклаш керак.
           </p>
 
-          <h3 className="mt-8 font-semibold">Bo‘g‘imlarning shikastlanishi quyidagi kasalliklarga sabab bo‘ladi:</h3>
-          <ul className="list-disc pl-6 space-y-2 text-left inline-block">
-            <li><b>Artrit.</b> Bo‘g‘imlarda yallig‘lanish paydo bo‘ladi...</li>
-            <li><b>Osteoartrit.</b> Bo‘g‘imlarning doimiy yemirilishi...</li>
-            <li><b>Osteoxondroz.</b> Suyak to‘qimalariga qon oqimi...</li>
-            <li><b>Revmatizm.</b> Shikastlanish tufayli og‘riq kuchayadi.</li>
-            <li><b>Podagra.</b> Oyoqlarda va ichki qismda paydo bo‘ladi...</li>
-            <li><b>Suyaklar va bo‘g‘imlardagi yallig‘lanish.</b> Suyuqlik
-              to‘planishi natijasida to‘qimalar nobud bo‘lishi mumkin.</li>
+          <h3 className="mt-10 text-2xl font-semibold">Бўғимларнинг шикастланиши қуйидаги касалликларга сабаб бўлади:</h3>
+          <ul className="list-disc pl-8 space-y-3 text-left inline-block text-xl">
+            <li><b>Артрит.</b> Бўғимларда яллиғʻланиш пайдо бўлади...</li>
+            <li><b>Остеоартрит.</b> Бўғимларнинг доимий емирилиши...</li>
+            <li><b>Остеохондроз.</b> Суяк тўқималарига қон оқими...</li>
+            <li><b>Ревматизм.</b> Шикастланиш туфайли оғриқ кучайди.</li>
+            <li><b>Подагра.</b> Оёқларда ва ички қисмда пайдо бўлади...</li>
+            <li><b>Суяклар ва бўғимлардаги яллиғʻланиш.</b> Суюқлик
+              тўпланиши натижасида тўқималар нобуд бўлиши мумкин.</li>
           </ul>
 
-          <h3 className="mt-8 font-semibold">Shikastlanish belgilariga quyidagilar kiradi:</h3>
-          <ul className="list-disc pl-6 space-y-2 text-left inline-block">
-            <li>Bo‘g‘imlardagi og‘riq</li>
-            <li>Harakatning buzilishi</li>
-            <li>Surunkali charchoq</li>
-            <li>Uyqusizlik</li>
-            <li>Oyoq va qo‘llardagi noqulaylik</li>
-            <li>Ko‘rish va eshitishning yomonlashishi</li>
-            <li>Oyoqlardagi shish</li>
-            <li>Nafas qisilishi va stenokardiya</li>
-            <li>Mushak va bo‘g‘imlardagi og‘riqlar</li>
+          <h3 className="mt-10 text-2xl font-semibold">Шикастланиш белгиларига қуйидагилар киради:</h3>
+          <ul className="list-disc pl-8 space-y-3 text-left inline-block text-xl">
+            <li>Бўғимлардаги оғриқ</li>
+            <li>Ҳаракатнинг бузилиши</li>
+            <li>Сурунки чарчоқ</li>
+            <li>Уйқусизлик</li>
+            <li>Оёқ ва қўллардаги ноқулайлик</li>
+            <li>Кўриш ва эшитишнинг ёмонлашиши</li>
+            <li>Оёқлардаги шиш</li>
+            <li>Нафас қисилиши ва стенокардия</li>
+            <li>Мушак ва бўғимлардаги оғриқлар</li>
           </ul>
 
-          <h3 className="mt-8 font-semibold">Mega Akula haqida</h3>
-          <p>
-            “Mega Akula” — bo‘g‘imlarni tiklash uchun yaratilgan tabiiy vosita
-            bo‘lib, 1–2 hafta ichida hatto shikastlangan bo‘g‘imlarni ham
-            tiklash imkonini beradi. Kimyoviy moddalar yo‘q, faqat o‘simlik
-            ekstraktlari mavjud.
+          <h3 className="mt-10 text-2xl font-semibold">Мега Акула ҳақида</h3>
+          <p className="text-xl">
+            "Мега Акула" — бўғимларни тиклаш учун яратилган табиий восита
+            бўлиб, 1–2 ҳафта ичида ҳатто шикастланган бўғимларни ҳам
+            тиклаш имконини беради. Кимёвий моддалар йўқ, фақат ўсимлик
+            экстрактлари мавжуд.
           </p>
-          <p className="mt-2">
-            Bu belgilar sizga xos bo‘lsa ham, bo‘lmasa ham, 30 yoshdan keyin hech bo‘lmaganda har 5 yilda bir marta bo‘g‘imlarni tiklab turish kerak. Bu holda sizning sog‘lig‘ingiz haqiqatan ham qahramonona bo‘ladi. Aslida, bo‘g‘imlar juda tez, ayniqsa keksalarda yemiriladi. Buning uchun kun bo‘yi burger va kartoshka fri yeyish shart emas. Bo‘g‘imlarda ma’lum miqdordagi tuzlar to‘planishi uchun oddiy ovqat yeyish kifoya. Vaqt o‘tishi bilan shikastlanishlar to‘planib boradi.
-          </p>
-
-          <p className="mt-3">
-            Mega Akula muntazam foydalanilganda 1–2 hafta ichida hatto juda shikastlangan bo‘g‘imlarni ham tiklash imkonini beradigan juda yaxshi vosita. Shuni ham ta’kidlamoqchimanki, bu mahsulot tarkibida kimyoviy moddalar mavjud emas, faqat bo‘g‘imlarni tiklash uchun foydali o‘simliklarning juda kontsentratsiyalangan ekstraktlari bor, shuning uchun u nafaqat organizmga zararli emas, balki juda foydali hamdir. Menga eski bemorlar hali ham bo‘g‘imlarni tiklash masalasida murojaat qilishadi. Oxirgi paytlarda men faqat shu vositani tavsiya qilaman. U hammaga yordam beradi va juda yaxshi. Revmatizm instituti saytida klinik sinovlar natijalaridan olingan bo‘g‘imlarni tiklash bo‘yicha rasmiy statistika mavjud. Jami 2000 ga yaqin bemorlar tadqiqotda ishtirok etishdi. Hammalari Mega Akula bilan davolanishdi.
+          <p className="mt-4 text-xl">
+            Бу белгилар сизга хос бўлса ҳам, бўлмаса ҳам, 30 ёшдан кейин ҳеч бўлмаганда ҳар 5 йилда бир марта бўғимларни тиклаб туриш керак. Бу ҳолда сизнинг согʻлиғингиз ҳақиқатан ҳам қаҳрамонона бўлади. Аслда, бўғимлар жуда тез, айниқса кексаларда емирилади. Бунинг учун кун бўйи бургер ва картошка фри ейиш шарт эмас. Бўғимларда маьлум микдордаги тузлар тўпланиши учун оддий овқат ейиш кифоя. Вақт ўтиши билан шикастланишлар тўпланиб боради.
           </p>
 
-          <h3 className="mt-8 font-semibold">Klinik tadqiqot natijalari:</h3>
-          <ul className="list-disc pl-6 space-y-2 text-left inline-block">
-            <li>Og‘riqning kamayishi – 99%</li>
-            <li>Harakatchanlikning normallashuvi – 97%</li>
-            <li>Tuzlardan va shishlardan tozalanish – 99%</li>
-            <li>Surunkali kasalliklarni davolash samaradorligi – 99%</li>
-            <li>Umumiy sog‘liq yaxshilanishi – 100%</li>
-            <li>Yon ta’sirlar yo‘qligi – 100%</li>
+          <p className="mt-4 text-xl">
+            Мега Акула мунтазам фойдаланилганда 1–2 ҳафта ичида ҳатто жуда шикастланган бўғимларни ҳам тиклаш имконини берадиган жуда яхши восита. Шуни ҳам таъкидламоқчиманки, бу маҳсулот таркибида кимёвий моддалар мавжуд эмас, фақат бўғимларни тиклаш учун фойдали ўсимликларнинг жуда концентратсияланган экстрактлари бор, шунинг учун у нафақат организмга зарарли эмас, балки жуда фойдали ҳамдир. Менга эски беморлар ҳали ҳам бўғимларни тиклаш масаласида мурожаат қилишади. Охирги пайтларда мен фақат шу воситани тавсия қиламан. У ҳаммага ёрдам беради ва жуда яхши. Ревматизм институти сайтида клиник синовлар натижаларидан олинган бўғимларни тиклаш бўйича расмий статистика мавжуд. Жами 2000 га яқин беморлар тадқиқотда иштирок этди. Ҳаммалари Мега Акула билан даволанишди.
+          </p>
+
+          <h3 className="mt-10 text-2xl font-semibold">Клиник тадқиқот натижалари:</h3>
+          <ul className="list-disc pl-8 space-y-3 text-left inline-block text-xl">
+            <li>Оғриқнинг камайиши – 99%</li>
+            <li>Ҳаракатчанликнинг нормаллашуви – 97%</li>
+            <li>Тузлардан ва шишлардан тозаланиш – 99%</li>
+            <li>Сурунки касалликларни даволаш самарадорлиги – 99%</li>
+            <li>Умумий согʻлик яхшиланиши – 100%</li>
+            <li>Ён таъсирлар йўқлиги – 100%</li>
           </ul>
 
-          <h3 className="mt-8 font-semibold">Mega Akulani qanday olish mumkin?</h3>
-          <ol className="list-decimal pl-6 space-y-2 text-left inline-block">
-            <li>Quyidagi lotereyada ishtirok eting.</li>
-            <li>Ariza shaklini to‘ldiring.</li>
-            <li>Menejer siz bilan bog‘lanadi.</li>
-            <li>1–4 kunda yetkazib beriladi.</li>
+          <h3 className="mt-10 text-2xl font-semibold">Мега Акулани қандай олиш мумкин?</h3>
+          <ol className="list-decimal pl-8 space-y-3 text-left inline-block text-xl">
+            <li>Қуйидаги лотереяда иштирок этинг.</li>
+            <li>Ариза шаклини тўлдиринг.</li>
+            <li>Менежер сиз билан богʻланади.</li>
+            <li>1–4 кунда етказиб берилади.</li>
           </ol>
-          <h2 className="text-3xl font-bold mt-4 mb-6">
-            Mega Akula
+          <h2 className="text-4xl font-bold mt-8 mb-8">
+            Мега Акула
           </h2>
-          <p>
-            Rostislav Filipovichning ta’kidlashicha, uzoq umr ko‘rishning siri sog‘lom bo‘g‘imlarda. Agar ular mustahkam va sog‘lom bo‘lsa, 120 yil va undan ham ko‘proq yashash mumkin, o‘zini mutlaqo sog‘lom his qiladi. Sobiq revmatolog o‘z da’volarini tasdiqlaydi.
+          <p className="text-xl">
+            Ростислав Филипповичнинг таъкидлашича, узоқ умр кўришнинг сири согʻлом бўғимларда. Агар улар мустаҳкам ва согʻлом бўлса, 120 йил ва ундан ҳам кўпроқ яшаш мумкин, ўзини мутлақо согʻлом ҳис қилади. Собиқ ревматолог ўз даъволарини тасдиқлайди.
           </p>
-          <p className="mt-3">
-            Muxbirimiz yuz yoshli inson bilan suhbat qurishga muvaffaq bo‘ldi. Karimov R. F. bo‘g‘imlarni tiklash va umrini uzaytirish usulini batafsil tasvirlab berdi.
+          <p className="mt-4 text-xl">
+            Мухбиримиз юз ёшли инсон билан суҳбат қуришга муваффақ бўлди. Каримов Р. Ф. бўғимларни тиклаш ва умини узойтириш усулини батафсил тасвирлаб берди.
 
-— Rostislav Filipovich, siz sog‘lom bo‘g‘imlar mustahkam sog‘liq asosi ekanligini ko‘p marta ta’kidlagansiz. Nega bunday deb o‘ylaysiz?
+— Ростислав Филиппович, сиз согʻлом бўғимлар мустаҳкам согʻлик асоси эканлигини кўп марта таъкидлагансиз. Нега бундай деб ўйлайсиз?
 
-Bu oddiy. Barcha ichki organlar va tizimlarning ishlashi bo‘g‘imlarning holatiga bog‘liq. Bo‘g‘imlarning harakatchanligi – bu erkin va og‘riqsiz harakatlanish, hayotdan to‘liq zavq olishdir. Bolalik, o‘smirlik va yosh­lik davrida biz juda ko‘p harakat qilamiz, bo‘g‘imlarimiz yangi, elastik va sog‘lom – barcha harakatlar maksimal darajada bo‘ladi. Ammo yosh o‘tgan sari biz kamroq harakat qilamiz va bo‘g‘imlarimiz yemirila boshlaydi. Bu turli omillar – nafaqat zararli (masalan, noto‘g‘ri ovqatlanish, ekologiya, o‘troq turmush tarzi), balki butunlay tabiiy (masalan, har bir insonga ta’sir qiluvchi tuzlarning to‘planishi) tufayli sodir bo‘ladi.
+Бу оддий. Барча ички органлар ва тизимларнинг ишлаши бўғимларнинг ҳолатига богʻлиқ. Бўғимларнинг ҳаракатчанлиги – бу эркин ва оғриқсиз ҳаракатланиш, ҳаётдан тўлиқ завқ олишдир. Болалик, ўсмирлик ва ёшлик даврида биз жуда кўп ҳаракат қиламиз, бўғимларимиз янги, эластик ва согʻлом – барча ҳаракатлар максимал даражада бўлади. Аммо ёш ўтган сари биз камроқ ҳаракат қиламиз ва бўғимларимиз емирила бошлайди. Бу турли омиллар – нафақат зарарли (масалан, нотоʻғри овқатланиш, экология, ўтроқ турмуш тарзи), балки бутунлай табиий (масалан, ҳар бир инсонга таъсир қилувчи тузларнинг тўпланиши) туфайли содир бўлади.
 
-Shikastlangan bo‘g‘imlar nima? Bu zang bilan to‘lgan mexanizmlarga o‘xshaydi. Natijada nima sodir bo‘ladi? Natijada harakatlanish og‘irlashadi va og‘riq paydo bo‘ladi. Bo‘g‘imlar bilan ham xuddi shunday hodisa ro‘y beradi. Ularda tuzlar yoki boshqa moddalar to‘planganda, shish paydo bo‘ladi va og‘riq kuchayadi. Natijada, barcha organlar va tizimlar aziyat chekadi, chunki harakat cheklanadi.
+Шикастланган бўғимлар нима? Бу занг билан тўлган механикларга ўхшайди. Натижада нима содир бўлади? Натижада ҳаракатланиш оғирлашади ва оғриқ пайдо бўлади. Бўғимлар билан ҳам худди шундай ҳодиса рўй беради. Уларда тузлар ёки бошқа моддалар тўпланганда, шиш пайдо бўлади ва оғриқ кучайди. Натижада, барча органлар ва тизимлар азият чекади, чунки ҳаракат чекланади.
 
-Natijada, inson qarishni boshlaydi. Agar siz bo‘g‘imlarni muntazam ravishda tiklab tursangiz, 120 yilgacha yashashingiz mumkin. Va shu bilan birga, hech narsa og‘rimaydi – bironta ham suyak yoki bo‘g‘im, va miyangiz yaxshi ishlaydi. Bu shuni anglatadiki, bo‘g‘imlarni tiklash orqali siz hayotingizni va sog‘lig‘ingizni sezilarli darajada uzaytirishingiz mumkin. Va bu nafaqat nazariya. Bir vaqtlar men buni o‘z bemorlarimga tavsiya qilgan edim, endi esa o‘zim ham shunday qilaman. O‘shanda mening maslahatmga quloq solgan barcha odamlar o‘z tengdoshlaridan uzoq umr ko‘rishdi.
+Натижада, инсон қаришни бошлайди. Агар сиз бўғимларни мунтазам равишда тиклаб турсангиз, 120 йилгача яшашингиз мумкин. Ва шу билан бирга, ҳеч нарса оғримайди – биронта ҳам суяк ёки бўғим, ва миянгиз яхши ишлайди. Бу шуни англатадики, бўғимларни тиклаш орқали сиз ҳаётингиз ва согʻлиғингизни сезиларли даражада узойтиришингиз мумкин. Ва бу нафақат назария. Бир вақтлар мен буни ўз беморларимга тавсия қилган эдим, энди эса ўзим ҳам шундай қиламан. Ўшанда менинг масаҳатмга қулоқ солган барча одамлар ўз тенгдошларидан узоқ умр кўришди.
           </p>
          
 
-          <p className="mt-3">
-            Aytgancha, AQSh va Kanadada buni har 35–40 yoshdan oshgan odam yarim
-            asrdan ko‘proq vaqt davomida qilib keladi. Ya’ni, u yerda bo‘g‘imlarni tiklash haqida
-            hamma narsani bilishadi. Nega bizda bunday emasligi men uchun katta savol bo‘lib qolmoqda.
+          <p className="mt-4 text-xl">
+            Айтганчи, АКШ ва Канадада буни ҳар 35–40 ёшдан ошган одам ярим
+            асрдан кўпроқ вақт давомида қилиб келади. Яъни, у ерда бўғимларни тиклаш ҳақида
+            ҳамма нарсани билишади. Нега бизда бундай эмаслиги мен учун катта савол бўлиб қолмоқда.
           </p>
 
-          <p className="mt-8 font-semibold text-center">
-            Sog‘lom bo‘g‘imlar – sog‘liq kalitidir. ✅
+          <p className="mt-10 text-2xl font-semibold text-center">
+            Согʻлом бўғимлар – согʻлик калитидир. ✅
           </p>
         </div>
       </section>

@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+/* qo'shimcha global sozlamalar */
+:root {
+  font-size: 16px; /* build va devda bir xil bo‘lishi uchun */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

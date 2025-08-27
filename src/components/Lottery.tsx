@@ -78,10 +78,10 @@ export default function Lottery({ darkMode }: LotteryProps) {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className={`text-3xl md:text-5xl font-bold mb-6 ${darkMode ? 'text-white' : 'text-slate-900'}`}>
-              Chegirmangizni yutib oling!
+              Чегирмангизни ютиб олинг!
             </h2>
             <p className={`text-lg md:text-xl ${darkMode ? 'text-slate-300' : 'text-slate-600'} max-w-2xl mx-auto leading-relaxed`}>
-              Bitta sovg'a qutisini tanlab, o'zingizga chegirmani qo'lga kiriting
+              Битта совға қутисини танлаб, ўзингизга чегирмани қўлга киритинг
             </p>
           </div>
 
@@ -119,7 +119,7 @@ export default function Lottery({ darkMode }: LotteryProps) {
                 onClick={handleShowModal}
                 className="px-8 py-3 rounded-xl bg-gradient-to-r from-blue-700 to-indigo-700 text-white font-semibold shadow-lg hover:scale-105 transform transition-all duration-300"
               >
-                🎉 100% Chegirmani Olish!
+                🎉 100% Чегирмани Олиш!
               </button>
             </div>
           )}
@@ -142,8 +142,8 @@ export default function Lottery({ darkMode }: LotteryProps) {
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-2">
                   <Gift className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold mb-1">🎉 Tabriklaymiz!</h3>
-                <p className="text-sm">Siz 100% chegirma yutdingiz!</p>
+                <h3 className="text-xl font-bold mb-1">🎉 Табриклаймиз!!</h3>
+                <p className="text-sm">Сиз 100% чегирма ютдингиз!</p>
               </div>
             </div>
 
@@ -160,7 +160,7 @@ export default function Lottery({ darkMode }: LotteryProps) {
                 </div>
               </div>
               <p className={`${darkMode ? 'text-slate-300' : 'text-slate-600'} text-xs mt-2`}>
-                To'liq komplekt yarim narxda!
+                Тўлиқ комплект ярим нархда!
               </p>
             </div>
 

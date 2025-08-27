@@ -21,12 +21,12 @@ export default function Hero({ darkMode }: HeroProps) {
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Headline */}
           <h1 className={`text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight ${darkMode ? 'text-white' : 'text-slate-900'}`}>
-            Yosh – hayotda 
-            <span className="text-blue-700"> to'siq emas!</span>
+            Ёш – ҳаётда 
+            <span className="text-blue-700"> тўсиқ эмас!</span>
           </h1>
           
           <h2 className={`text-xl md:text-3xl lg:text-4xl font-semibold mb-8 ${darkMode ? 'text-slate-300' : 'text-slate-700'}`}>
-            MeGa Akula bilan bo'g'imlaringizni sog'lom qiling
+            МеГа Акула билан бўғимларингизни соғлом қилинг
           </h2>
 
           {/* Story Preview */}
@@ -39,10 +39,10 @@ export default function Hero({ darkMode }: HeroProps) {
               </div>
               <div className="text-left">
                 <h3 className={`text-xl md:text-2xl font-bold mb-2 ${darkMode ? 'text-white' : 'text-slate-900'}`}>
-                  Akademik Rostislav Karimov
+                  Академик Ростислав Каримов
                 </h3>
                 <p className={`${darkMode ? 'text-slate-300' : 'text-slate-700'} text-lg leading-relaxed`}>
-                  97 yoshida ham faol hayot kechirayotgan taniqli akademikning sog'lom bo'g'imlar sirlari
+                  97 ёшида ҳам фаол ҳаёт кечираётган таниқли академикнинг соғлом бўғимлар сирлари
                 </p>
               </div>
             </div>
@@ -54,7 +54,7 @@ export default function Hero({ darkMode }: HeroProps) {
             className="group bg-gradient-to-r from-blue-700 to-indigo-700 text-white px-8 md:px-12 py-4 md:py-6 text-lg md:text-xl font-semibold rounded-full shadow-2xl hover:shadow-blue-700/30 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
           >
             <span className="flex items-center justify-center gap-3">
-              Chegirmada olish
+              Чегирмада олиш
               <ArrowDown className="w-6 h-6 group-hover:animate-bounce" />
             </span>
           </button>
